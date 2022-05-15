@@ -18,6 +18,6 @@ Instructions:
 
 Now load the sound file into the program:
 
-- Open the program, click on Edit - Open or CTRL+O.
+- Open the program, click on Edit - Open or Alt+O.
 
-The resulting text will appear in the text window. The window will display only the first 20.000 characters, which you can copy through File-Copy or by rigth clicking on it or CTRL-C. If you want to read the whole text you must save it, through the Save command in the File menu or CTRL-S.
+The resulting text will appear in the text window. The window will display only the first 20.000 characters, which you can copy through File-Copy or by rigth clicking on it or Alt-C. If you want to read the whole text you must save it, through the Save command in the File menu or Alt-S. Alt-F will open the menu and let you navigate it with the keyboard.

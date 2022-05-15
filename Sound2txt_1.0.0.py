@@ -8,12 +8,6 @@ import base64
 import os
 import shutil
 
-
-#init
-def init():
-    global textcheck
-    textcheck=0
-
 #Create app window
 def create_app_window():
         global top
@@ -52,7 +46,6 @@ def open_file():
 def encode():
     global soundtext
     global tempfile
-    global textcheck
     tempfile=open("tempfile",'w')
     soundtext=''
     soundfile.seek(44)
@@ -69,8 +62,6 @@ def encode():
     textbox.delete(1.0,END)
     textbox.insert(INSERT,soundtext[0:20000])
     textbox.configure(state=DISABLED)
-    textcheck=1
-    soundfile.close()
 
 #Copy Code
 def copy_text():
@@ -79,8 +70,6 @@ def copy_text():
 
 #Save to file
 def Save_to_file():
-        if textcheck!=1:
-            return 0
         data=[('Text','*.txt')]
         reportfile=asksaveasfilename(filetypes=data, defaultextension=data)
         if str(reportfile)!='':
@@ -137,7 +126,6 @@ def create_context_menu():
 
 #main procedure
 def main():
-    init()
     create_app_window()
     create_textbox()
     create_menu()
